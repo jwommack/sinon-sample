@@ -4,14 +4,16 @@
 name: Node.js CI - Run tests
 
 on:
-  push:
+  #push:
+    #branches: [ "main" ]
+  #pull_request:
+    #branches: [ "main" ]
+  workflow_dispatch:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
 
     strategy:
