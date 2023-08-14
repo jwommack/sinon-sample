@@ -15,5 +15,5 @@ Strangely enough `stub()` will assign to the default sandbox register but, it wi
 The expected environment is a Typescript one. All tests are run against the `Generico` class. Currently there are no tests for Singletons but, those should also be expected to preserve their prototype across suites.
 
 
-`npm install`
-`node node_modules/.bin/mocha -r ts-node/register src/__tests__/*`
+* `npm install`
+* `npm run test` or `node node_modules/.bin/mocha -r ts-node/register src/__tests__/*`
